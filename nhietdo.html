@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhietdo</title>
+</head>
+<body>
+<script>
+    let Temperature = function (C) {
+       this.doC = C;
+       this.changeF = function () {
+           return (9*this.doC/5)+32;
+       }
+       this.changeKenvin = function () {
+           return this.doC +273;
+       }
+    }
+    let temper = new Temperature(25);
+    document.write("Do F: "+ temper.changeF() + "<br>");
+    document.write("Do K: "+ temper.changeKenvin());
+</script>
+</body>
+</html>
